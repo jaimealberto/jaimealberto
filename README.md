@@ -4,6 +4,24 @@
 ![FreeBSD](https://img.shields.io/badge/-FreeBSD-%23870000?style=for-the-badge&logo=freebsd&logoColor=white)
 ![MacOS](https://img.shields.io/badge/mac%20os-000000?style=for-the-badge&logo=macos&logoColor=F0F0F0)
 
+🧱Firwalls
+
+![OPNSense](https://img.shields.io/badge/-OPNSense-D94F00?style=flat&logo=opnsense&logoColor=white)
+![pfSense](https://img.shields.io/badge/-pfSense-212121?style=flat&logo=pfsense&logoColor=white)
+<img src="https://img.shields.io/badge/-Palo Alto Networks-F04E23?style=flat&logo=paloaltonetworks&logoColor=white"/>
+<img src="https://img.shields.io/badge/-Fortinet-EE3124?style=flat&logo=fortinet&logoColor=white"/>
+
+🛡️ VPN
+
+<img src="https://img.shields.io/badge/-OpenVPN-EA7E20?style=flat&logo=openvpn&logoColor=white"/>
+<img src="https://img.shields.io/badge/-WireGuard-88171A?style=flat&logo=wireguard&logoColor=white"/>
+<img src="https://img.shields.io/badge/-Juniper Networks-84B135?style=flat&logo=junipernetworks&logoColor=white"/>
+
+🗺 Load balancer
+
+<img src="https://img.shields.io/badge/-F5-E4002B?style=flat&logo=f5&logoColor=white"/>
+
+
 🌐 Browsers
 
 ![Firefox](https://img.shields.io/badge/Firefox-FF7139?style=for-the-badge&logo=Firefox-Browser&logoColor=white)
