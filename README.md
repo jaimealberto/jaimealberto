@@ -1,6 +1,10 @@
 ## 📌 Recent Activity
 
 <!--START_SECTION:activity-->
+1. ❗ Opened issue [#413](https://github.com/dockur/macos/issues/413) in [dockur/macos](https://github.com/dockur/macos)
+2. ❗ Opened issue [#1740](https://github.com/dockur/windows/issues/1740) in [dockur/windows](https://github.com/dockur/windows)
+3. ❗ Opened issue [#1739](https://github.com/dockur/windows/issues/1739) in [dockur/windows](https://github.com/dockur/windows)
+4. ❗ Opened issue [#412](https://github.com/dockur/macos/issues/412) in [dockur/macos](https://github.com/dockur/macos)
 <!--END_SECTION:activity-->
 
 ---
