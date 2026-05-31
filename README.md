@@ -9,6 +9,16 @@
 
 ---
 
+## 🤝 Open Source Contributions
+
+| Project | Contribution | Status |
+|---|---|---|
+| [community-scripts/ProxmoxVE](https://github.com/community-scripts/ProxmoxVE) | [#14605](https://github.com/community-scripts/ProxmoxVE/issues/14605) — Excalidraw LXC: Node.js 24.x incompatibility | ✅ Closed |
+| [dockur/windows](https://github.com/dockur/windows) | [#1739](https://github.com/dockur/windows/issues/1739) Docs fix · [#1740](https://github.com/dockur/windows/issues/1740) CPU throttling UX | 🟡 Open |
+| [dockur/macos](https://github.com/dockur/macos) | [#412](https://github.com/dockur/macos/issues/412) Silent reinstall fail · [#413](https://github.com/dockur/macos/issues/413) Docs fix | 🟡 Open |
+
+---
+
 🎛️ Operating System
 
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
