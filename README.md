@@ -1,10 +1,10 @@
 ## 📌 Recent Activity
 
 <!--START_SECTION:activity-->
-1. ❗ Opened issue [#14605](https://github.com/community-scripts/ProxmoxVE/issues/14605) in [community-scripts/ProxmoxVE](https://github.com/community-scripts/ProxmoxVE)
-2. ❗ Opened issue [#1](https://github.com/jaimealberto/mcp-askpass/issues/1) in [jaimealberto/mcp-askpass](https://github.com/jaimealberto/mcp-askpass)
-3. ❗ Opened issue [#413](https://github.com/dockur/macos/issues/413) in [dockur/macos](https://github.com/dockur/macos)
-4. ❗ Opened issue [#1740](https://github.com/dockur/windows/issues/1740) in [dockur/windows](https://github.com/dockur/windows)
+1. 🔒 Closed issue [#15002](https://github.com/community-scripts/ProxmoxVE/issues/15002) in [community-scripts/ProxmoxVE](https://github.com/community-scripts/ProxmoxVE)
+2. 🗣 Commented on [#15002](https://github.com/community-scripts/ProxmoxVE/issues/15002#issuecomment-4649006166) in [community-scripts/ProxmoxVE](https://github.com/community-scripts/ProxmoxVE)
+3. ❗ Opened issue [#15002](https://github.com/community-scripts/ProxmoxVE/issues/15002) in [community-scripts/ProxmoxVE](https://github.com/community-scripts/ProxmoxVE)
+4. ❗ Opened issue [#14605](https://github.com/community-scripts/ProxmoxVE/issues/14605) in [community-scripts/ProxmoxVE](https://github.com/community-scripts/ProxmoxVE)
 <!--END_SECTION:activity-->
 
 ---
