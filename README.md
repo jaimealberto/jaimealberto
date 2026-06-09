@@ -1,10 +1,10 @@
 ## 📌 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 🔒 Closed issue [#15002](https://github.com/community-scripts/ProxmoxVE/issues/15002) in [community-scripts/ProxmoxVE](https://github.com/community-scripts/ProxmoxVE)
-2. 🗣 Commented on [#15002](https://github.com/community-scripts/ProxmoxVE/issues/15002#issuecomment-4649006166) in [community-scripts/ProxmoxVE](https://github.com/community-scripts/ProxmoxVE)
-3. ❗ Opened issue [#15002](https://github.com/community-scripts/ProxmoxVE/issues/15002) in [community-scripts/ProxmoxVE](https://github.com/community-scripts/ProxmoxVE)
-4. ❗ Opened issue [#14605](https://github.com/community-scripts/ProxmoxVE/issues/14605) in [community-scripts/ProxmoxVE](https://github.com/community-scripts/ProxmoxVE)
+1. 🔒 Closed issue [#1](https://github.com/jaimealberto/harper-mcps/issues/1) in [jaimealberto/harper-mcps](https://github.com/jaimealberto/harper-mcps)
+2. ❗ Opened issue [#1](https://github.com/jaimealberto/harper-mcps/issues/1) in [jaimealberto/harper-mcps](https://github.com/jaimealberto/harper-mcps)
+3. 🔒 Closed issue [#15002](https://github.com/community-scripts/ProxmoxVE/issues/15002) in [community-scripts/ProxmoxVE](https://github.com/community-scripts/ProxmoxVE)
+4. 🗣 Commented on [#15002](https://github.com/community-scripts/ProxmoxVE/issues/15002#issuecomment-4649006166) in [community-scripts/ProxmoxVE](https://github.com/community-scripts/ProxmoxVE)
 <!--END_SECTION:activity-->
 
 ---
