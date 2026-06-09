@@ -21,11 +21,13 @@
 
 ## 🔧 Own Projects
 
+<!--START_SECTION:own-projects-->
 | Project | Description | Recent |
 |---|---|---|
 | [harper-mcps](https://github.com/jaimealberto/harper-mcps) | MCP servers for Claude Code — SSH+nmap, Obsidian vault, WinRM, OSINT | 🐛 [fix: handle BrokenPipeError and unexpected exceptions](https://github.com/jaimealberto/harper-mcps/commit/1c79aa4) |
 | [mcp-askpass](https://github.com/jaimealberto/mcp-askpass) | MCP server for secure password prompts in Claude Code — native KDE/GNOME popup, no chat exposure | |
 | [scripts](https://github.com/jaimealberto/scripts) | Shell scripts for homelab automation | |
+<!--END_SECTION:own-projects-->
 
 ---
 

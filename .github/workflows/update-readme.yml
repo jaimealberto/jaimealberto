@@ -10,9 +10,87 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: jamesgeorge007/github-activity-readme@master
+
+      - name: Update recent activity section
+        uses: jamesgeorge007/github-activity-readme@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           COMMIT_MSG: 'chore: update recent activity'
           MAX_LINES: 10
+
+      - name: Update own projects table
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git pull
+          python3 << 'PYEOF'
+          import os, json, re
+          from urllib.request import urlopen, Request
+          from urllib.error import HTTPError
+
+          token = os.environ["GITHUB_TOKEN"]
+          headers = {
+              "Authorization": f"token {token}",
+              "Accept": "application/vnd.github.v3+json",
+          }
+
+          REPOS = [
+              {
+                  "name": "harper-mcps",
+                  "url": "https://github.com/jaimealberto/harper-mcps",
+                  "desc": "MCP servers for Claude Code — SSH+nmap, Obsidian vault, WinRM, OSINT",
+              },
+              {
+                  "name": "mcp-askpass",
+                  "url": "https://github.com/jaimealberto/mcp-askpass",
+                  "desc": "MCP server for secure password prompts in Claude Code — native KDE/GNOME popup, no chat exposure",
+              },
+              {
+                  "name": "scripts",
+                  "url": "https://github.com/jaimealberto/scripts",
+                  "desc": "Shell scripts for homelab automation",
+              },
+          ]
+
+          def get_last_commit(repo_name):
+              url = f"https://api.github.com/repos/jaimealberto/{repo_name}/commits/main"
+              req = Request(url, headers=headers)
+              try:
+                  with urlopen(req) as r:
+                      data = json.loads(r.read())
+                  sha = data["sha"][:7]
+                  msg = data["commit"]["message"].split("\n")[0][:60]
+                  commit_url = f"https://github.com/jaimealberto/{repo_name}/commit/{sha}"
+                  return f"[{msg}]({commit_url})"
+              except HTTPError:
+                  return ""
+              except Exception:
+                  return ""
+
+          rows = ["| Project | Description | Recent |", "|---|---|---|"]
+          for repo in REPOS:
+              recent = get_last_commit(repo["name"])
+              link = f"[{repo['name']}]({repo['url']})"
+              rows.append(f"| {link} | {repo['desc']} | {recent} |")
+
+          table = "\n".join(rows)
+
+          with open("README.md") as f:
+              content = f.read()
+
+          pattern = r"(<!--START_SECTION:own-projects-->).*?(<!--END_SECTION:own-projects-->)"
+          replacement = f"\\1\n{table}\n\\2"
+          new_content = re.sub(pattern, replacement, content, flags=re.DOTALL)
+
+          with open("README.md", "w") as f:
+              f.write(new_content)
+
+          print("Own projects table updated.")
+          PYEOF
+
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add README.md
+          git diff --staged --quiet || git commit -m "chore: update own projects table"
+          git push
