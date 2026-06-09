@@ -1,4 +1,4 @@
-name: Update README with recent activity
+name: Update README
 
 on:
   schedule:
@@ -9,32 +9,120 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
-      - name: Update recent activity section
-        uses: jamesgeorge007/github-activity-readme@master
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          COMMIT_MSG: 'chore: update recent activity'
-          MAX_LINES: 10
-
-      - name: Update own projects table
+      - name: Update README sections
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          git pull
           python3 << 'PYEOF'
           import os, json, re
           from urllib.request import urlopen, Request
           from urllib.error import HTTPError
 
-          token = os.environ["GITHUB_TOKEN"]
-          headers = {
-              "Authorization": f"token {token}",
+          TOKEN = os.environ["GITHUB_TOKEN"]
+          USERNAME = "jaimealberto"
+          MAX_LINES = 10
+
+          HEADERS = {
+              "Authorization": f"token {TOKEN}",
               "Accept": "application/vnd.github.v3+json",
           }
 
+          def gh_get(url):
+              req = Request(url, headers=HEADERS)
+              try:
+                  with urlopen(req) as r:
+                      return json.loads(r.read())
+              except Exception:
+                  return None
+
+          # ── Sección activity ──────────────────────────────────────────────
+
+          def format_event(event):
+              etype = event["type"]
+              repo = event["repo"]["name"]
+              payload = event.get("payload", {})
+
+              if etype == "IssuesEvent":
+                  action = payload.get("action", "opened")
+                  issue = payload.get("issue", {})
+                  num = issue.get("number", "")
+                  url = issue.get("html_url", "")
+                  icons = {"opened": "❗", "closed": "🔒", "reopened": "🔓"}
+                  icon = icons.get(action, "❗")
+                  return f"{icon} {action.capitalize()} issue [#{num}]({url}) in [{repo}](https://github.com/{repo})"
+
+              if etype == "IssueCommentEvent":
+                  issue = payload.get("issue", {})
+                  num = issue.get("number", "")
+                  url = payload.get("comment", {}).get("html_url", issue.get("html_url", ""))
+                  return f"🗣 Commented on [#{num}]({url}) in [{repo}](https://github.com/{repo})"
+
+              if etype == "PullRequestEvent":
+                  action = payload.get("action", "opened")
+                  pr = payload.get("pull_request", {})
+                  num = pr.get("number", "")
+                  url = pr.get("html_url", "")
+                  merged = pr.get("merged", False)
+                  if action == "closed" and merged:
+                      return f"🔀 Merged PR [#{num}]({url}) in [{repo}](https://github.com/{repo})"
+                  if action == "closed":
+                      return f"🔀 Closed PR [#{num}]({url}) in [{repo}](https://github.com/{repo})"
+                  return f"💪 Opened PR [#{num}]({url}) in [{repo}](https://github.com/{repo})"
+
+              if etype == "PushEvent":
+                  branch = payload.get("ref", "").replace("refs/heads/", "")
+                  count = len(payload.get("commits", []))
+                  s = "s" if count != 1 else ""
+                  url = f"https://github.com/{repo}/tree/{branch}"
+                  return f"📌 Pushed {count} commit{s} to [{branch}]({url}) in [{repo}](https://github.com/{repo})"
+
+              if etype == "CreateEvent":
+                  ref_type = payload.get("ref_type", "")
+                  ref = payload.get("ref", "")
+                  return f"📌 Created {ref_type} `{ref}` in [{repo}](https://github.com/{repo})"
+
+              if etype == "ForkEvent":
+                  forkee = payload.get("forkee", {}).get("full_name", "")
+                  return f"🍴 Forked [{repo}](https://github.com/{repo}) to [{forkee}](https://github.com/{forkee})"
+
+              if etype == "WatchEvent":
+                  return f"⭐ Starred [{repo}](https://github.com/{repo})"
+
+              if etype == "ReleaseEvent":
+                  release = payload.get("release", {})
+                  tag = release.get("tag_name", "")
+                  url = release.get("html_url", "")
+                  return f"🚀 Released [{tag}]({url}) in [{repo}](https://github.com/{repo})"
+
+              if etype == "PullRequestReviewEvent":
+                  pr = payload.get("pull_request", {})
+                  num = pr.get("number", "")
+                  url = pr.get("html_url", "")
+                  return f"👀 Reviewed PR [#{num}]({url}) in [{repo}](https://github.com/{repo})"
+
+              return None
+
+          def update_activity(content):
+              events = gh_get(f"https://api.github.com/users/{USERNAME}/events/public?per_page=100")
+              if not events:
+                  print("Warning: no se pudieron obtener eventos de actividad")
+                  return content
+              lines = []
+              for event in events:
+                  if len(lines) >= MAX_LINES:
+                      break
+                  formatted = format_event(event)
+                  if formatted:
+                      lines.append(f"{len(lines)+1}. {formatted}")
+              activity = "\n".join(lines)
+              pattern = r"(<!--START_SECTION:activity-->).*?(<!--END_SECTION:activity-->)"
+              return re.sub(pattern, f"\\1\n{activity}\n\\2", content, flags=re.DOTALL)
+
+          # ── Sección own-projects ──────────────────────────────────────────
+
+          # Para añadir un repo nuevo: añadir una entrada a esta lista
           REPOS = [
               {
                   "name": "harper-mcps",
@@ -54,43 +142,42 @@ jobs:
           ]
 
           def get_last_commit(repo_name):
-              url = f"https://api.github.com/repos/jaimealberto/{repo_name}/commits/main"
-              req = Request(url, headers=headers)
-              try:
-                  with urlopen(req) as r:
-                      data = json.loads(r.read())
-                  sha = data["sha"][:7]
-                  msg = data["commit"]["message"].split("\n")[0][:60]
-                  commit_url = f"https://github.com/jaimealberto/{repo_name}/commit/{sha}"
-                  return f"[{msg}]({commit_url})"
-              except HTTPError:
+              data = gh_get(f"https://api.github.com/repos/{USERNAME}/{repo_name}/commits/main")
+              if not data:
                   return ""
-              except Exception:
-                  return ""
+              sha = data["sha"][:7]
+              msg = data["commit"]["message"].split("\n")[0][:60]
+              url = f"https://github.com/{USERNAME}/{repo_name}/commit/{sha}"
+              return f"[{msg}]({url})"
 
-          rows = ["| Project | Description | Recent |", "|---|---|---|"]
-          for repo in REPOS:
-              recent = get_last_commit(repo["name"])
-              link = f"[{repo['name']}]({repo['url']})"
-              rows.append(f"| {link} | {repo['desc']} | {recent} |")
+          def update_own_projects(content):
+              rows = ["| Project | Description | Recent |", "|---|---|---|"]
+              for repo in REPOS:
+                  recent = get_last_commit(repo["name"])
+                  link = f"[{repo['name']}]({repo['url']})"
+                  rows.append(f"| {link} | {repo['desc']} | {recent} |")
+              table = "\n".join(rows)
+              pattern = r"(<!--START_SECTION:own-projects-->).*?(<!--END_SECTION:own-projects-->)"
+              return re.sub(pattern, f"\\1\n{table}\n\\2", content, flags=re.DOTALL)
 
-          table = "\n".join(rows)
+          # ── Main ──────────────────────────────────────────────────────────
 
           with open("README.md") as f:
               content = f.read()
 
-          pattern = r"(<!--START_SECTION:own-projects-->).*?(<!--END_SECTION:own-projects-->)"
-          replacement = f"\\1\n{table}\n\\2"
-          new_content = re.sub(pattern, replacement, content, flags=re.DOTALL)
+          content = update_activity(content)
+          content = update_own_projects(content)
 
           with open("README.md", "w") as f:
-              f.write(new_content)
+              f.write(content)
 
-          print("Own projects table updated.")
+          print("README actualizado.")
           PYEOF
 
+      - name: Commit and push
+        run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add README.md
-          git diff --staged --quiet || git commit -m "chore: update own projects table"
+          git diff --staged --quiet || git commit -m "chore: update README"
           git push
