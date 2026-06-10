@@ -6,11 +6,11 @@
 3. 📌 Pushed 0 commits to [main](https://github.com/jaimealberto/jaimealberto.github.io/tree/main) in [jaimealberto/jaimealberto.github.io](https://github.com/jaimealberto/jaimealberto.github.io)
 4. 📌 Pushed 0 commits to [main](https://github.com/jaimealberto/jaimealberto.github.io/tree/main) in [jaimealberto/jaimealberto.github.io](https://github.com/jaimealberto/jaimealberto.github.io)
 5. 📌 Pushed 0 commits to [main](https://github.com/jaimealberto/jaimealberto.github.io/tree/main) in [jaimealberto/jaimealberto.github.io](https://github.com/jaimealberto/jaimealberto.github.io)
-6. 📌 Pushed 0 commits to [main](https://github.com/jaimealberto/jaimealberto/tree/main) in [jaimealberto/jaimealberto](https://github.com/jaimealberto/jaimealberto)
-7. 📌 Pushed 0 commits to [main](https://github.com/jaimealberto/jaimealberto/tree/main) in [jaimealberto/jaimealberto](https://github.com/jaimealberto/jaimealberto)
-8. 📌 Pushed 0 commits to [main](https://github.com/jaimealberto/jaimealberto/tree/main) in [jaimealberto/jaimealberto](https://github.com/jaimealberto/jaimealberto)
-9. 📌 Pushed 0 commits to [main](https://github.com/jaimealberto/harper-mcps/tree/main) in [jaimealberto/harper-mcps](https://github.com/jaimealberto/harper-mcps)
-10. 🔒 Closed issue [#1](https://github.com/jaimealberto/harper-mcps/issues/1) in [jaimealberto/harper-mcps](https://github.com/jaimealberto/harper-mcps)
+6. 📌 Pushed 0 commits to [main](https://github.com/jaimealberto/jaimealberto.github.io/tree/main) in [jaimealberto/jaimealberto.github.io](https://github.com/jaimealberto/jaimealberto.github.io)
+7. 📌 Pushed 0 commits to [main](https://github.com/jaimealberto/jaimealberto.github.io/tree/main) in [jaimealberto/jaimealberto.github.io](https://github.com/jaimealberto/jaimealberto.github.io)
+8. 📌 Pushed 0 commits to [main](https://github.com/jaimealberto/jaimealberto.github.io/tree/main) in [jaimealberto/jaimealberto.github.io](https://github.com/jaimealberto/jaimealberto.github.io)
+9. 📌 Pushed 0 commits to [main](https://github.com/jaimealberto/jaimealberto/tree/main) in [jaimealberto/jaimealberto](https://github.com/jaimealberto/jaimealberto)
+10. 📌 Pushed 0 commits to [main](https://github.com/jaimealberto/jaimealberto/tree/main) in [jaimealberto/jaimealberto](https://github.com/jaimealberto/jaimealberto)
 <!--END_SECTION:activity-->
 
 ---
