@@ -6,7 +6,6 @@
 3. 📌 Pushed 0 commits to [main](https://github.com/jaimealberto/jaimealberto.github.io/tree/main) in [jaimealberto/jaimealberto.github.io](https://github.com/jaimealberto/jaimealberto.github.io)
 4. 📌 Pushed 0 commits to [main](https://github.com/jaimealberto/jaimealberto.github.io/tree/main) in [jaimealberto/jaimealberto.github.io](https://github.com/jaimealberto/jaimealberto.github.io)
 5. 📌 Pushed 0 commits to [main](https://github.com/jaimealberto/jaimealberto.github.io/tree/main) in [jaimealberto/jaimealberto.github.io](https://github.com/jaimealberto/jaimealberto.github.io)
-6. 📌 Pushed 0 commits to [main](https://github.com/jaimealberto/jaimealberto.github.io/tree/main) in [jaimealberto/jaimealberto.github.io](https://github.com/jaimealberto/jaimealberto.github.io)
 <!--END_SECTION:activity-->
 
 ---
