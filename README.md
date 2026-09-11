@@ -1,7 +1,7 @@
 ## 📌 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 📌 Pushed 0 commits to [main](https://github.com/jaimealberto/jaimealberto/tree/main) in [jaimealberto/jaimealberto](https://github.com/jaimealberto/jaimealberto)
+1. 📌 Pushed 0 commits to [main](https://github.com/jaimealberto/harper-mcps/tree/main) in [jaimealberto/harper-mcps](https://github.com/jaimealberto/harper-mcps)
 <!--END_SECTION:activity-->
 
 ---
