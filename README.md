@@ -1,7 +1,9 @@
 ## 📌 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 📌 Pushed 0 commits to [main](https://github.com/jaimealberto/jaimealberto.github.io/tree/main) in [jaimealberto/jaimealberto.github.io](https://github.com/jaimealberto/jaimealberto.github.io)
+1. 💪 Opened PR [#1]() in [jaimealberto/scripts](https://github.com/jaimealberto/scripts)
+2. 💪 Opened PR [#1]() in [jaimealberto/scripts](https://github.com/jaimealberto/scripts)
+3. 📌 Pushed 0 commits to [main](https://github.com/jaimealberto/jaimealberto.github.io/tree/main) in [jaimealberto/jaimealberto.github.io](https://github.com/jaimealberto/jaimealberto.github.io)
 <!--END_SECTION:activity-->
 
 ---
@@ -21,9 +23,9 @@
 <!--START_SECTION:own-projects-->
 | Project | Description | Recent |
 |---|---|---|
-| [harper-mcps](https://github.com/jaimealberto/harper-mcps) | MCP servers for Claude Code — SSH+nmap, Obsidian vault, WinRM, OSINT | [fix(ssh): async tools/call execution — one slow call no long](https://github.com/jaimealberto/harper-mcps/commit/d7ee564) |
-| [mcp-askpass](https://github.com/jaimealberto/mcp-askpass) | MCP server for secure password prompts in Claude Code — native KDE/GNOME popup, no chat exposure | [docs: README principal en castellano, inglés en README.en.md](https://github.com/jaimealberto/mcp-askpass/commit/d652d7e) |
-| [scripts](https://github.com/jaimealberto/scripts) | Shell scripts for homelab automation | [Update README.md new zt scripts](https://github.com/jaimealberto/scripts/commit/a624ba5) |
+| [harper-mcps](https://github.com/jaimealberto/harper-mcps) | MCP servers for Claude Code — SSH+nmap, Obsidian vault, WinRM, OSINT | [chore: añade LICENSE MIT y CI de sintaxis Python](https://github.com/jaimealberto/harper-mcps/commit/42fe1cf) |
+| [mcp-askpass](https://github.com/jaimealberto/mcp-askpass) | MCP server for secure password prompts in Claude Code — native KDE/GNOME popup, no chat exposure | [chore: añade .gitignore, CI de sintaxis Python y unifica aut](https://github.com/jaimealberto/mcp-askpass/commit/7dee38a) |
+| [scripts](https://github.com/jaimealberto/scripts) | Shell scripts for homelab automation | [chore: usa el handle JaimeAlberto en autoría (quita apellido](https://github.com/jaimealberto/scripts/commit/19a7915) |
 <!--END_SECTION:own-projects-->
 
 ---
