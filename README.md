@@ -34,7 +34,7 @@
 ![FreeBSD](https://img.shields.io/badge/-FreeBSD-%23870000?style=for-the-badge&logo=freebsd&logoColor=white)
 ![MacOS](https://img.shields.io/badge/mac%20os-000000?style=for-the-badge&logo=macos&logoColor=F0F0F0)
 
-🧱Firwalls
+🧱 Firewalls
 
 ![OPNSense](https://img.shields.io/badge/-OPNSense-D94F00?style=flat&logo=opnsense&logoColor=white)
 ![pfSense](https://img.shields.io/badge/-pfSense-212121?style=flat&logo=pfsense&logoColor=white)
