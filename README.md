@@ -1,9 +1,10 @@
 ## 📌 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 💪 Opened PR [#1]() in [jaimealberto/scripts](https://github.com/jaimealberto/scripts)
+1. 📌 Created branch `pro-makeover` in [jaimealberto/scripts](https://github.com/jaimealberto/scripts)
 2. 💪 Opened PR [#1]() in [jaimealberto/scripts](https://github.com/jaimealberto/scripts)
-3. 📌 Pushed 0 commits to [main](https://github.com/jaimealberto/jaimealberto.github.io/tree/main) in [jaimealberto/jaimealberto.github.io](https://github.com/jaimealberto/jaimealberto.github.io)
+3. 💪 Opened PR [#1]() in [jaimealberto/scripts](https://github.com/jaimealberto/scripts)
+4. 📌 Pushed 0 commits to [main](https://github.com/jaimealberto/jaimealberto.github.io/tree/main) in [jaimealberto/jaimealberto.github.io](https://github.com/jaimealberto/jaimealberto.github.io)
 <!--END_SECTION:activity-->
 
 ---
