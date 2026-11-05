@@ -1,3 +1,12 @@
+# Hola, soy Jaime 👋
+
+**Administrador de sistemas / DevOps / Ciberseguridad** — homelab, automatización, infraestructura y seguridad ofensiva/defensiva.
+Linux · Proxmox · Ansible · redes y firewalls · monitorización · pentesting · hardening · OSINT · IA aplicada a sysadmin y seguridad.
+
+🌐 [www.jaimealberto.io](https://www.jaimealberto.io)
+
+---
+
 ## 📌 Recent Activity
 
 <!--START_SECTION:activity-->
@@ -36,6 +45,18 @@
 <!--END_SECTION:own-projects-->
 
 ---
+
+🛡️ Seguridad / Pentesting
+
+![Kali Linux](https://img.shields.io/badge/Kali_Linux-557C94?style=for-the-badge&logo=kalilinux&logoColor=white)
+![Metasploit](https://img.shields.io/badge/Metasploit-2596CD?style=for-the-badge&logo=metasploit&logoColor=white)
+![Wireshark](https://img.shields.io/badge/Wireshark-1679A7?style=for-the-badge&logo=wireshark&logoColor=white)
+![Burp Suite](https://img.shields.io/badge/Burp_Suite-FF6633?style=for-the-badge&logo=burpsuite&logoColor=white)
+![Nmap](https://img.shields.io/badge/Nmap-004880?style=for-the-badge&logo=nmap&logoColor=white)
+![OWASP](https://img.shields.io/badge/OWASP-000000?style=for-the-badge&logo=owasp&logoColor=white)
+![Hack The Box](https://img.shields.io/badge/Hack_The_Box-9FEF00?style=for-the-badge&logo=hackthebox&logoColor=black)
+![TryHackMe](https://img.shields.io/badge/TryHackMe-212C42?style=for-the-badge&logo=tryhackme&logoColor=white)
+![Tor](https://img.shields.io/badge/Tor-7D4698?style=for-the-badge&logo=torproject&logoColor=white)
 
 🎛️ Operating System
 
@@ -135,7 +156,7 @@
 ## &#x1f4c8; GitHub Stats
 
 <a href="https://github.com/jaimealberto/jaimealberto">
-  <img align="center" src="https://github-readme-stats.vercel.app/api?username=jaimealberto&show_icons=true&line_height=27&count_private=true&title_color=ffffff&text_color=c9cacc&icon_color=2bbc8a&bg_color=1d1f21" alt="Martin's GitHub Stats" />
+  <img align="center" src="https://github-readme-stats.vercel.app/api?username=jaimealberto&show_icons=true&line_height=27&count_private=true&title_color=ffffff&text_color=c9cacc&icon_color=2bbc8a&bg_color=1d1f21" alt="Jaime's GitHub Stats" />
 </a>
 
 <a href="https://github.com/jaimealberto/jaimealberto.github.io">
