@@ -72,11 +72,23 @@ jobs:
                   return f"💪 Opened PR [#{num}]({url}) in [{repo}](https://github.com/{repo})"
 
               if etype == "PushEvent":
+                  # El feed público de GitHub ya no incluye el array `commits`
+                  # ni `size` en los PushEvent, así que contamos los commits
+                  # reales con la API de compare (before...head). Si no se puede
+                  # (push inicial / force-push / commit ausente), omitimos el número.
                   branch = payload.get("ref", "").replace("refs/heads/", "")
-                  count = len(payload.get("commits", []))
-                  s = "s" if count != 1 else ""
                   url = f"https://github.com/{repo}/tree/{branch}"
-                  return f"📌 Pushed {count} commit{s} to [{branch}]({url}) in [{repo}](https://github.com/{repo})"
+                  before = payload.get("before", "")
+                  head = payload.get("head", "")
+                  count = None
+                  if before and head and set(before) != {"0"}:
+                      cmp = gh_get(f"https://api.github.com/repos/{repo}/compare/{before}...{head}")
+                      if cmp and cmp.get("total_commits") is not None:
+                          count = cmp["total_commits"]
+                  if count is not None:
+                      s = "s" if count != 1 else ""
+                      return f"📌 Pushed {count} commit{s} to [{branch}]({url}) in [{repo}](https://github.com/{repo})"
+                  return f"📌 Pushed to [{branch}]({url}) in [{repo}](https://github.com/{repo})"
 
               if etype == "CreateEvent":
                   ref_type = payload.get("ref_type", "")
