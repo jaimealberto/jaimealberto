@@ -10,16 +10,16 @@ Linux · Proxmox · Ansible · redes y firewalls · monitorización · pentestin
 ## 📌 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 📌 Pushed 1 commit to [main](https://github.com/jaimealberto/jaimealberto/tree/main) in [jaimealberto/jaimealberto](https://github.com/jaimealberto/jaimealberto)
-2. 📌 Pushed 1 commit to [main](https://github.com/jaimealberto/scripts/tree/main) in [jaimealberto/scripts](https://github.com/jaimealberto/scripts)
+1. 📌 Pushed 1 commit to [main](https://github.com/jaimealberto/pdfcraft-mcp-kit/tree/main) in [jaimealberto/pdfcraft-mcp-kit](https://github.com/jaimealberto/pdfcraft-mcp-kit)
+2. 📌 Pushed 1 commit to [main](https://github.com/jaimealberto/jaimealberto/tree/main) in [jaimealberto/jaimealberto](https://github.com/jaimealberto/jaimealberto)
 3. 📌 Pushed 1 commit to [main](https://github.com/jaimealberto/scripts/tree/main) in [jaimealberto/scripts](https://github.com/jaimealberto/scripts)
-4. 📌 Pushed 1 commit to [main](https://github.com/jaimealberto/harper-mcps/tree/main) in [jaimealberto/harper-mcps](https://github.com/jaimealberto/harper-mcps)
-5. 📌 Pushed 1 commit to [master](https://github.com/jaimealberto/ansible/tree/master) in [jaimealberto/ansible](https://github.com/jaimealberto/ansible)
-6. 📌 Pushed 1 commit to [main](https://github.com/jaimealberto/Miniguias/tree/main) in [jaimealberto/Miniguias](https://github.com/jaimealberto/Miniguias)
-7. 📌 Pushed 1 commit to [main](https://github.com/jaimealberto/mcp-askpass/tree/main) in [jaimealberto/mcp-askpass](https://github.com/jaimealberto/mcp-askpass)
-8. 📌 Pushed 1 commit to [pro-makeover](https://github.com/jaimealberto/scripts/tree/pro-makeover) in [jaimealberto/scripts](https://github.com/jaimealberto/scripts)
-9. 📌 Pushed 1 commit to [main](https://github.com/jaimealberto/jaimealberto/tree/main) in [jaimealberto/jaimealberto](https://github.com/jaimealberto/jaimealberto)
-10. 📌 Created branch `pro-makeover` in [jaimealberto/scripts](https://github.com/jaimealberto/scripts)
+4. 📌 Pushed 1 commit to [main](https://github.com/jaimealberto/scripts/tree/main) in [jaimealberto/scripts](https://github.com/jaimealberto/scripts)
+5. 📌 Pushed 1 commit to [main](https://github.com/jaimealberto/harper-mcps/tree/main) in [jaimealberto/harper-mcps](https://github.com/jaimealberto/harper-mcps)
+6. 📌 Pushed 1 commit to [master](https://github.com/jaimealberto/ansible/tree/master) in [jaimealberto/ansible](https://github.com/jaimealberto/ansible)
+7. 📌 Pushed 1 commit to [main](https://github.com/jaimealberto/Miniguias/tree/main) in [jaimealberto/Miniguias](https://github.com/jaimealberto/Miniguias)
+8. 📌 Pushed 1 commit to [main](https://github.com/jaimealberto/mcp-askpass/tree/main) in [jaimealberto/mcp-askpass](https://github.com/jaimealberto/mcp-askpass)
+9. 📌 Pushed 1 commit to [pro-makeover](https://github.com/jaimealberto/scripts/tree/pro-makeover) in [jaimealberto/scripts](https://github.com/jaimealberto/scripts)
+10. 📌 Pushed 1 commit to [main](https://github.com/jaimealberto/jaimealberto/tree/main) in [jaimealberto/jaimealberto](https://github.com/jaimealberto/jaimealberto)
 <!--END_SECTION:activity-->
 
 ---
