@@ -10,16 +10,16 @@ Linux · Proxmox · Ansible · redes y firewalls · monitorización · pentestin
 ## 📌 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 🗣 Commented on [#1](https://github.com/jaimealberto/mcp-askpass/issues/1#issuecomment-7136941835) in [jaimealberto/mcp-askpass](https://github.com/jaimealberto/mcp-askpass)
-2. 🔒 Closed issue [#1](https://github.com/jaimealberto/mcp-askpass/issues/1) in [jaimealberto/mcp-askpass](https://github.com/jaimealberto/mcp-askpass)
-3. 📌 Created branch `main` in [jaimealberto/ansible](https://github.com/jaimealberto/ansible)
-4. 📌 Created branch `main` in [jaimealberto/pdfcraft-mcp-kit](https://github.com/jaimealberto/pdfcraft-mcp-kit)
-5. 📌 Created branch `master` in [jaimealberto/pdfcraft-mcp-kit](https://github.com/jaimealberto/pdfcraft-mcp-kit)
-6. 📌 Pushed 1 commit to [main](https://github.com/jaimealberto/pdfcraft-mcp-kit/tree/main) in [jaimealberto/pdfcraft-mcp-kit](https://github.com/jaimealberto/pdfcraft-mcp-kit)
-7. 📌 Pushed 1 commit to [main](https://github.com/jaimealberto/jaimealberto/tree/main) in [jaimealberto/jaimealberto](https://github.com/jaimealberto/jaimealberto)
-8. 📌 Pushed 1 commit to [main](https://github.com/jaimealberto/scripts/tree/main) in [jaimealberto/scripts](https://github.com/jaimealberto/scripts)
-9. 📌 Pushed 1 commit to [main](https://github.com/jaimealberto/scripts/tree/main) in [jaimealberto/scripts](https://github.com/jaimealberto/scripts)
-10. 📌 Pushed 1 commit to [main](https://github.com/jaimealberto/harper-mcps/tree/main) in [jaimealberto/harper-mcps](https://github.com/jaimealberto/harper-mcps)
+1. 📌 Pushed 1 commit to [main](https://github.com/jaimealberto/mcp-askpass/tree/main) in [jaimealberto/mcp-askpass](https://github.com/jaimealberto/mcp-askpass)
+2. 📌 Pushed 1 commit to [main](https://github.com/jaimealberto/mcp-askpass/tree/main) in [jaimealberto/mcp-askpass](https://github.com/jaimealberto/mcp-askpass)
+3. 🗣 Commented on [#1](https://github.com/jaimealberto/mcp-askpass/issues/1#issuecomment-7136941835) in [jaimealberto/mcp-askpass](https://github.com/jaimealberto/mcp-askpass)
+4. 🔒 Closed issue [#1](https://github.com/jaimealberto/mcp-askpass/issues/1) in [jaimealberto/mcp-askpass](https://github.com/jaimealberto/mcp-askpass)
+5. 📌 Created branch `main` in [jaimealberto/ansible](https://github.com/jaimealberto/ansible)
+6. 📌 Created branch `main` in [jaimealberto/pdfcraft-mcp-kit](https://github.com/jaimealberto/pdfcraft-mcp-kit)
+7. 📌 Created branch `master` in [jaimealberto/pdfcraft-mcp-kit](https://github.com/jaimealberto/pdfcraft-mcp-kit)
+8. 📌 Pushed 1 commit to [main](https://github.com/jaimealberto/pdfcraft-mcp-kit/tree/main) in [jaimealberto/pdfcraft-mcp-kit](https://github.com/jaimealberto/pdfcraft-mcp-kit)
+9. 📌 Pushed 1 commit to [main](https://github.com/jaimealberto/jaimealberto/tree/main) in [jaimealberto/jaimealberto](https://github.com/jaimealberto/jaimealberto)
+10. 📌 Pushed 1 commit to [main](https://github.com/jaimealberto/scripts/tree/main) in [jaimealberto/scripts](https://github.com/jaimealberto/scripts)
 <!--END_SECTION:activity-->
 
 ---
